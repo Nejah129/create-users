@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "dev": "concurrently \"npm start\" \"cd client && npm start\""
+
   },
   "author": "nejah",
   "license": "ISC",
@@ -17,5 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.11",
     "nodemon": "^2.0.7"
+    
   }
+  
 }
